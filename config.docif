@@ -91,13 +91,13 @@ SETUP_SHA_FILES+=("./config.docif")
 # Commands are in this format
 # COMMAND; SHORT_NAME; DESCRIPTION
 TEST_COMMANDS=()
-TEST_COMMANDS+=( 'make;compile;A test to see if the code compiles' )
+TEST_COMMANDS+=( 'echo "hello world!";hello-world;A simple check to see if DoCIF is running!' )
 # TEST_COMMANDS+=( 'make run;test-running;A test to see if the code runs' )
 
 # @RECCOMENDED
 # Clean command. Cleans the build files so there is no way the previous build can interfere. Add if you run
 # into issues
-CLEAN_COMMAND="make clean || true"
+CLEAN_COMMAND="true"
 # Other options are `gradle clean`, `mvn clean`, or `rm -rf build`
 
 # Environmental variables to make available to the build environment
